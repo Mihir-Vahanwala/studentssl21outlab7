@@ -59,7 +59,7 @@ public class RandomPlayer {
 			}
 			if (direction == 2){
 				int sum = row + col;
-				int tarrow = ThreadLocalRandom.current().nextInt(0, sum+1);
+				int tarrow = ThreadLocalRandom.current().nextInt(0, 8);
 				int tarcol = sum - tarrow;
 				int tarsq = 8 * tarrow + tarcol;
 				this.square = tarsq;
